@@ -6,7 +6,7 @@
   <component name="ChangeListManager">
     <list default="true" id="f51887bd-878a-479c-929b-87eb4498a8ab" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/stepDefinitions/AmazonStepDefinition.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/stepDefinitions/AmazonStepDefinition.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/runners/Runner.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/runners/Runner.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/resources/features/firstFeatureFile.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/features/firstFeatureFile.feature" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -56,7 +56,7 @@
       <recent name="utilities" />
     </key>
   </component>
-  <component name="RunManager" selected="Cucumber Java.Scenario: TC02 Arama kutusunda samsung aratilir">
+  <component name="RunManager" selected="JUnit.Runner">
     <configuration name="Feature: firstFeatureFile" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
       <option name="CUCUMBER_CORE_VERSION" value="5" />
       <option name="FILE_PATH" value="$PROJECT_DIR$/src/test/resources/features/firstFeatureFile.feature" />
@@ -115,8 +115,24 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="Runner" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="B189CucumberProjectDT" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="runners.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="runners" />
+      <option name="MAIN_CLASS_NAME" value="runners.Runner" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.Runner" />
         <item itemvalue="Cucumber Java.Scenario: TC02 Arama kutusunda samsung aratilir" />
         <item itemvalue="Cucumber Java.Feature: firstFeatureFile" />
         <item itemvalue="Cucumber Java.Scenario: TC01 Arama kutusunda iphone aratılır" />
