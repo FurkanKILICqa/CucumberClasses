@@ -9,8 +9,8 @@ import org.junit.runner.RunWith;
 @CucumberOptions(
    features = "src\\test\\resources\\features\\firstFeatureFile.feature",
         glue = "stepDefinitions",
-        tags = "@US001",
-        dryRun = false
+        tags = "@US002",
+        dryRun = true
         //dryRun da trure dersek featurefile da sarılık varmı diye kontrol eder false derssek direk çalistirir
 
 

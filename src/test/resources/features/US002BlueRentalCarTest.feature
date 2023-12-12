@@ -1,3 +1,4 @@
+@US002
 Feature: US002 BlueRentalCar Test
   Scenario: TC01 Verilen email ve password ile login olunur
     Given kullanici blueRentalCar sayfasina gider
