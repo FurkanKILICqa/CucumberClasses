@@ -6,3 +6,9 @@ Feature: US001 Amazon Home Page Test(Her test feature altında kullanılır)
     Given kullanici amazon sayfasına gider
     When arama kutusunda iphone aratir
     And sayfayi kapatir
+
+    Scenario: TC02 Arama kutusunda samsung aratilir
+
+      Given kullanici amazon sayfasına gider
+      When arama kutusunda samsung aratir
+      And sayfayi kapatir
