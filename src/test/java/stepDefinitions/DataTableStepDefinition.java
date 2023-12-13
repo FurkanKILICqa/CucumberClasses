@@ -14,7 +14,7 @@ public class DataTableStepDefinition {
     }
 
     @And("kullanici verilen bilgileri girer {string}, {string}, {string}, {string}, {string}, {string}, {string}")
-    public void kullaniciVerilenBilgileriGirer(String name, String lastName, String arg2, String arg3, String arg4, String arg5, String arg6) {
+    public void kullaniciVerilenBilgileriGirer(String name, String lastName, String position, String office, String arg4, String arg5, String arg6) {
     }
 
     @And("create butonuna basar")
