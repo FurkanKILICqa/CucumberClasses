@@ -42,9 +42,8 @@ public class AmazonStepDefinition {
     }
 
 
+    @When("arama kutusunda nokia aratir")
+    public void aramaKutusundaNokiaAratir() {
 
-
-
-
-
+    }
 }
