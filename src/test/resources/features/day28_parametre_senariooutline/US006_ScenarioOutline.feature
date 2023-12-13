@@ -1,4 +1,4 @@
-
+@US006
 Feature: US005 Google Testi Scnario Outline
 
   Scenario Outline: TC01 Google sayfasinda arama kutusunda arac aratilir
@@ -9,5 +9,11 @@ Feature: US005 Google Testi Scnario Outline
     And sayfayi kapatir
     Examples:
       | araclar |
+      | honda   |
+      | ford    |
+      | volvo   |
+      | bmw     |
+      | mercedes|
+      | toyota  |
 
 
