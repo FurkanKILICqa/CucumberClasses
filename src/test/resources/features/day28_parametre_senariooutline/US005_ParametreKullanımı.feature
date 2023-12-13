@@ -1,3 +1,4 @@
+@US005
 Feature: US005 Google Testi
 
   Scenario: TC01 Google sayfasinda arama kutusunda arac aratilir
