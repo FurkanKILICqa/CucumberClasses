@@ -7,7 +7,7 @@
     <list default="true" id="f51887bd-878a-479c-929b-87eb4498a8ab" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/stepDefinitions/AmazonStepDefinition.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/stepDefinitions/AmazonStepDefinition.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/resources/features/US003_Background.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/features/US003_Background.feature" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/resources/features/day28_parametre_senariooutline/US004_ParametreKullanimi.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/features/day28_parametre_senariooutline/US004_ParametreKullanimi.feature" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -50,6 +50,9 @@
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\hpvic\IdeaProjects\B189CucumberProjectDT" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\hpvic\IdeaProjects\B189CucumberProjectDT\src\test\resources\features\day27_backround" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
       <recent name="pages" />
