@@ -3,8 +3,12 @@ package stepDefinitions;
 import io.cucumber.java.en.And;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
+import pages.DataTablePage;
 
 public class DataTableStepDefinition {
+
+    DataTablePage dataTablePage = new DataTablePage();
+
     @When("kullanici sayfadaki new butonuna basar")
     public void kullaniciSayfadakiNewButonunaBasar() {
     }
