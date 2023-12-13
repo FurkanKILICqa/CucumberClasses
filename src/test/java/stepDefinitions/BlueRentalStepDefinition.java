@@ -2,6 +2,7 @@ package stepDefinitions;
 
 import io.cucumber.java.en.And;
 import io.cucumber.java.en.Given;
+import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
 import org.openqa.selenium.Keys;
 import pages.BlueRentalPage;
@@ -36,4 +37,17 @@ public class BlueRentalStepDefinition {
         blueRentalPage.password.sendKeys(ConfigReader.getProperty("blueRentalPassword"), Keys.ENTER);
     }
 
+    @Given("kullanici {string} sayfasina gider")
+    public void kullaniciSayfasinaGider(String arg0) {
+
+    }
+
+    @Then("login oldugunu dogrular")
+    public void loginOldugunuDogrular() {
+
+    }
+
+    @And("kullanici {string} ve {string} bilgilerini girer")
+    public void kullaniciVeBilgileriniGirer(String email, String password) {
+    }
 }
