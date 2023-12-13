@@ -9,6 +9,7 @@
 # Başarılı bir şekilde giriş yapıldığını doğrulayalım
 # Sayfayı kapatalım
 
+  @US008
 Feature: US008 DataTables Testi
   Scenario Outline: TC01 DataTables Veri Girisi
     Given kullanici "https://editor.datatables.net" sayfasina gider
