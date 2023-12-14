@@ -56,6 +56,7 @@ public class GoogleStepDefinition {
         for (String w:List) {
             googlePage.searchbox.sendKeys(w+Keys.ENTER);
             Assert.assertTrue(Driver.getDriver().getTitle().contains(w));
+            googlePage.searchbox.clear();
         }
 
     }
