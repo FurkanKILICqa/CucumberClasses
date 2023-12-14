@@ -58,4 +58,9 @@ public class AmazonStepDefinition {
     public void aramaKutusundaAratir(String str) {
         amazonPage.searcBox.sendKeys(str+ Keys.ENTER);
     }
+
+    @Given("kullanici amazon sayfasina gider")
+    public void kullaniciAmazonSayfasinaGider() {
+
+    }
 }

@@ -40,6 +40,7 @@ public class BlueRentalStepDefinition {
 
     @Given("kullanici {string} sayfasina gider")
     public void kullaniciSayfasinaGider(String arg0) {
+        Driver.getDriver().get(ConfigReader.getProperty("googleUrl"));
 
     }
 
