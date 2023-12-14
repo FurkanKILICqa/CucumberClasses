@@ -95,7 +95,7 @@ public class BlueRentalStepDefinition {
 
         }
 
-        //2...yolu
+        //2........yolu
 
         for (int i = 1; i < dataTable.asLists().size(); i++) {
 
