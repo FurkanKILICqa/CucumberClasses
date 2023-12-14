@@ -7,11 +7,14 @@ import org.junit.runner.RunWith;
 
 @RunWith(Cucumber.class)
 @CucumberOptions(
-   features = "src\\test\\resources\\features",
+        plugin = {"html:target/default-cucumber-reports.html",
+                "json:target/json-reports/cucumber.json",
+                "junit:target/xml-report/cucumber.xml"},
+        features = "src/test/resources/features",
         glue = "stepDefinitions",
         tags = "@US008",
         dryRun = false
-        //dryRun da trure dersek featurefile da sarılık varmı diye kontrol eder false derssek direk çalistirir
+//dryRun da trure dersek featurefile da sarılık varmı diye kontrol eder false derssek direk çalistirir
 
 
 )
