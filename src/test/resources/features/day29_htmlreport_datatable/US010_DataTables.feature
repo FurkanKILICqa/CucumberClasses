@@ -1,3 +1,4 @@
+@US010
 Feature: US010 BlueRentalCar sayfasinda Login Testi
 
   Scenario: TC01 Verilen email ve password bilgileri ile login olunur

@@ -1,5 +1,6 @@
 package stepDefinitions;
 
+import io.cucumber.datatable.DataTable;
 import io.cucumber.java.en.And;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
@@ -11,6 +12,7 @@ import utilities.ConfigReader;
 import utilities.Driver;
 
 import java.io.FileNotFoundException;
+import java.util.List;
 
 public class BlueRentalStepDefinition {
 
@@ -65,5 +67,13 @@ public class BlueRentalStepDefinition {
 
         //3.Assertion
         Assert.assertNotEquals("login", blueRentalPage.loginVerify.getText());
+    }
+
+    @And("verilen email ve password ile login olur")
+    public void verilenEmailVePasswordIleLoginOlur(DataTable dataTable) {
+
+       List<List<String>>emailPassword = dataTable.asLists();
+        System.out.println(emailPassword);
+
     }
 }
