@@ -10,6 +10,7 @@ import org.openqa.selenium.Keys;
 import pages.BlueRentalPage;
 import utilities.ConfigReader;
 import utilities.Driver;
+import utilities.ReusableMethods;
 
 import java.io.FileNotFoundException;
 import java.util.List;
@@ -72,8 +73,41 @@ public class BlueRentalStepDefinition {
     @And("verilen email ve password ile login olur")
     public void verilenEmailVePasswordIleLoginOlur(DataTable dataTable) {
 
-       List<List<String>>emailPassword = dataTable.asLists();
-        System.out.println(emailPassword);
+        List< List< String > > emailPasword = dataTable.asLists();
+        System.out.println("emailPasword = " + emailPasword);
+        /*
+        [  [email, password],
+        [sam.walker@bluerentalcars.com, sami],
+        [john_doe@gmail.com, johndoe],
+        [johnson@bluerentalcars.com, johnson]  ]
+         */
 
-    }
+        for (int i = 1; i <emailPasword.size() ;    i++) {
+
+            String email= emailPasword.get(i).get(0);
+            String password= emailPasword.get(i).get(1);
+
+            blueRentalPage.email.sendKeys(email);
+            blueRentalPage.password.sendKeys(password,Keys.ENTER);
+
+            ReusableMethods.bekle(2);
+            Driver.getDriver().navigate().back();
+
+        }
+
+        //2.yolu
+
+        for (int i = 1; i <dataTable.asLists().size() ;    i++) {
+
+            String email= dataTable.row(i).get(0);
+            String password= dataTable.row(i).get(1);
+
+            blueRentalPage.email.sendKeys(email);
+            blueRentalPage.password.sendKeys(password,Keys.ENTER);
+
+            ReusableMethods.bekle(2);
+            Driver.getDriver().navigate().back();
+
+
+        }
 }
