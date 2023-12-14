@@ -14,7 +14,7 @@ import org.junit.runner.RunWith;
                 "junit:target/xml-report/cucumber.xml"},
         features = "src/test/resources/features",
         glue = "stepDefinitions",
-        tags = "@US004",
+        tags = "@US009",
         dryRun = false
         //monochrome = true pretty ile yeşil verilen detayları siyah yapar
 //dryRun da trure dersek featurefile da sarılık varmı diye kontrol eder false derssek direk çalistirir
