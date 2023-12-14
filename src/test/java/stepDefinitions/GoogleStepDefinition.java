@@ -1,9 +1,6 @@
 package stepDefinitions;
 
-import io.cucumber.java.en.But;
-import io.cucumber.java.en.Given;
-import io.cucumber.java.en.Then;
-import io.cucumber.java.en.When;
+import io.cucumber.java.en.*;
 import org.junit.Assert;
 import org.openqa.selenium.Keys;
 import pages.GooglePage;
@@ -15,18 +12,19 @@ public class GoogleStepDefinition {
 
     GooglePage googlePage= new GooglePage();
 
-    @When("google arama kutusunda {string} aratir")
-    public void googleAramaKutusundaAratir(String arac) {
-        googlePage.searchbox.sendKeys(arac, Keys.ENTER);
-    }
-
     @Then("sayfa basliginin {string} icerdigini test eder")
-    public void sayfaBasligininIcerdiginiTestEder(String arac) {
-        Assert.assertTrue(Driver.getDriver().getTitle().contains(arac));
+    public void sayfaBasligininIcerdiginiTestEder(String str) {
+        Assert.assertTrue(Driver.getDriver().getTitle().contains(str));
     }
 
-    @But("kullanici {int} saniye bekler")
+    @And("kullanici {int} saniye bekler")
     public void kullaniciSaniyeBekler(int saniye) {
         ReusableMethods.bekle(saniye);
+    }
+
+    @When("google arama kutusunda {string} aratir")
+    public void googleAramaKutusundaAratir(String str) {
+        googlePage.searchbox.sendKeys(str + Keys.ENTER);
+
     }
 }

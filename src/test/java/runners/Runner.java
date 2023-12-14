@@ -7,13 +7,16 @@ import org.junit.runner.RunWith;
 
 @RunWith(Cucumber.class)
 @CucumberOptions(
-        plugin = {"html:target/default-cucumber-reports.html",
+        plugin = {
+                "pretty",
+                "html:target/default-cucumber-reports.html",
                 "json:target/json-reports/cucumber.json",
                 "junit:target/xml-report/cucumber.xml"},
         features = "src/test/resources/features",
         glue = "stepDefinitions",
-        tags = "@US008",
+        tags = "@US004",
         dryRun = false
+        //monochrome = true pretty ile yeşil verilen detayları siyah yapar
 //dryRun da trure dersek featurefile da sarılık varmı diye kontrol eder false derssek direk çalistirir
 
 
