@@ -73,7 +73,7 @@ public class BlueRentalStepDefinition {
     @And("verilen email ve password ile login olur")
     public void verilenEmailVePasswordIleLoginOlur(DataTable dataTable) {
 
-        List< List< String > > emailPasword = dataTable.asLists();
+        List<List<String>> emailPasword = dataTable.asLists();
         System.out.println("emailPasword = " + emailPasword);
         /*
         [  [email, password],
@@ -82,32 +82,33 @@ public class BlueRentalStepDefinition {
         [johnson@bluerentalcars.com, johnson]  ]
          */
 
-        for (int i = 1; i <emailPasword.size() ;    i++) {
+        for (int i = 1; i < emailPasword.size(); i++) {
 
-            String email= emailPasword.get(i).get(0);
-            String password= emailPasword.get(i).get(1);
+            String email = emailPasword.get(i).get(0);
+            String password = emailPasword.get(i).get(1);
 
             blueRentalPage.email.sendKeys(email);
-            blueRentalPage.password.sendKeys(password,Keys.ENTER);
+            blueRentalPage.password.sendKeys(password, Keys.ENTER);
 
             ReusableMethods.bekle(2);
             Driver.getDriver().navigate().back();
 
         }
 
-        //2.yolu
+        //2...yolu
 
-        for (int i = 1; i <dataTable.asLists().size() ;    i++) {
+        for (int i = 1; i < dataTable.asLists().size(); i++) {
 
-            String email= dataTable.row(i).get(0);
-            String password= dataTable.row(i).get(1);
+            String email = dataTable.row(i).get(0);
+            String password = dataTable.row(i).get(1);
 
             blueRentalPage.email.sendKeys(email);
-            blueRentalPage.password.sendKeys(password,Keys.ENTER);
+            blueRentalPage.password.sendKeys(password, Keys.ENTER);
 
             ReusableMethods.bekle(2);
             Driver.getDriver().navigate().back();
 
 
         }
+    }
 }
