@@ -4,7 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="f51887bd-878a-479c-929b-87eb4498a8ab" name="Changes" comment="" />
+    <list default="true" id="f51887bd-878a-479c-929b-87eb4498a8ab" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/src/test/java/stepDefinitions/RobotStepDefinition.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/runners/ParallelRunner1.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/runners/ParallelRunner1.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/runners/ParallelRunner2.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/runners/ParallelRunner2.java" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -57,11 +62,12 @@
       <recent name="C:\Users\hpvic\IdeaProjects\B189CucumberProjectDT\src\test\resources\features\day27_backround" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="runners" />
       <recent name="pages" />
       <recent name="utilities" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.Runner">
+  <component name="RunManager" selected="JUnit.RobotStepDefinition.name">
     <configuration name="Feature: US008_ScenarioOutlineClassWork" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
       <option name="CUCUMBER_CORE_VERSION" value="5" />
       <option name="FILE_PATH" value="$PROJECT_DIR$/src/test/resources/features/day28_parametre_senariooutline/US008_ScenarioOutlineClassWork.feature" />
@@ -100,25 +106,6 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Scenario: TC01 Arama kutusunda iphone aratılır" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
-      <option name="CUCUMBER_CORE_VERSION" value="5" />
-      <option name="FILE_PATH" value="$PROJECT_DIR$/src/test/resources/features/firstFeatureFile.feature" />
-      <option name="MAIN_CLASS_NAME" value="io.cucumber.core.cli.Main" />
-      <module name="B189CucumberProjectDT" />
-      <option name="NAME_FILTER" value="^TC01 Arama kutusunda iphone aratılır$" />
-      <option name="PROGRAM_PARAMETERS" value=" --plugin org.jetbrains.plugins.cucumber.java.run.CucumberJvm5SMFormatter --name &quot;^TC01 Arama kutusunda iphone aratılır$&quot;" />
-      <option name="SUGGESTED_NAME" value="Scenario: TC01 Arama kutusunda iphone aratılır" />
-      <option name="WORKING_DIRECTORY" value="$MODULE_WORKING_DIR$" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="io.cucumber.core.cli.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <configuration name="Scenario: TC02 Arama kutusunda samsung aratilir" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
       <option name="CUCUMBER_CORE_VERSION" value="5" />
       <option name="FILE_PATH" value="$PROJECT_DIR$/src/test/resources/features/firstFeatureFile.feature" />
@@ -135,6 +122,22 @@
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="RobotStepDefinition.name" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="B189CucumberProjectDT" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="stepDefinitions.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="stepDefinitions" />
+      <option name="MAIN_CLASS_NAME" value="stepDefinitions.RobotStepDefinition" />
+      <option name="METHOD_NAME" value="name" />
+      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -156,11 +159,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.RobotStepDefinition.name" />
         <item itemvalue="JUnit.Runner" />
         <item itemvalue="Cucumber Java.Feature: US008_ScenarioOutlineClassWork" />
         <item itemvalue="Cucumber Java.Scenario: TC02 Arama kutusunda samsung aratilir" />
         <item itemvalue="Cucumber Java.Feature: firstFeatureFile" />
-        <item itemvalue="Cucumber Java.Scenario: TC01 Arama kutusunda iphone aratılır" />
       </list>
     </recent_temporary>
   </component>
