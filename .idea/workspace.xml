@@ -4,12 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="f51887bd-878a-479c-929b-87eb4498a8ab" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/test/java/stepDefinitions/RobotStepDefinition.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/runners/ParallelRunner1.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/runners/ParallelRunner1.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/runners/ParallelRunner2.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/runners/ParallelRunner2.java" afterDir="false" />
-    </list>
+    <list default="true" id="f51887bd-878a-479c-929b-87eb4498a8ab" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -67,7 +62,7 @@
       <recent name="utilities" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.RobotStepDefinition.name">
+  <component name="RunManager" selected="JUnit.Runner">
     <configuration name="Feature: US008_ScenarioOutlineClassWork" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
       <option name="CUCUMBER_CORE_VERSION" value="5" />
       <option name="FILE_PATH" value="$PROJECT_DIR$/src/test/resources/features/day28_parametre_senariooutline/US008_ScenarioOutlineClassWork.feature" />
@@ -159,8 +154,8 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.RobotStepDefinition.name" />
         <item itemvalue="JUnit.Runner" />
+        <item itemvalue="JUnit.RobotStepDefinition.name" />
         <item itemvalue="Cucumber Java.Feature: US008_ScenarioOutlineClassWork" />
         <item itemvalue="Cucumber Java.Scenario: TC02 Arama kutusunda samsung aratilir" />
         <item itemvalue="Cucumber Java.Feature: firstFeatureFile" />
