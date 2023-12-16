@@ -4,7 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="f51887bd-878a-479c-929b-87eb4498a8ab" name="Changes" comment="" />
+    <list default="true" id="f51887bd-878a-479c-929b-87eb4498a8ab" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/src/test/java/stepDefinitions/RobotStepDefinition.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/stepDefinitions/RobotStepDefinition.java" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -57,8 +59,8 @@
       <recent name="C:\Users\hpvic\IdeaProjects\B189CucumberProjectDT\src\test\resources\features\day27_backround" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
-      <recent name="runners" />
       <recent name="pages" />
+      <recent name="runners" />
       <recent name="utilities" />
     </key>
   </component>

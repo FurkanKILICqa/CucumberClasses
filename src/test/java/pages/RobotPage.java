@@ -26,8 +26,17 @@ public class RobotPage {
 
 
 
-    @FindBy(id = "twotabsearchtextbox")
-    public WebElement searcBox;
+    /*
+     PageFactory.initElements(Driver.getDriver(),this); kodu bu classtaki class memberlari webdriver ile eslestirir
+     Bu sayede classtaki webelementlere erismek icin PageFactory e yardimci olan  @FindBy notasyonu kullanilabilir
+     */
+
+    @FindBy(xpath="//*[.='Select PDF files']")
+    public WebElement selectButton;
+
+
+    @FindBy(xpath="//span[.='Batch189upload.pdf']")
+    public WebElement verify;
 
 
 
