@@ -26,8 +26,7 @@ public class Hook {
             scenario.attach(ts.getScreenshotAs(OutputType.BYTES),"image/png","scnario"+scenario.getName());
             Driver.getDriver().close();
         }
-        scenario.isFailed();
-        System.out.println("Hook classindaki @Before methodu her test senaryosunda sonra çalişir");
+
 
     }
 
