@@ -2,8 +2,12 @@ package hooks;
 
 import io.cucumber.java.After;
 import io.cucumber.java.Before;
+import io.cucumber.java.Scenario;
 import org.junit.AfterClass;
 import org.junit.BeforeClass;
+import org.openqa.selenium.TakesScreenshot;
+import utilities.Driver;
+import utilities.ReusableMethods;
 
 public class Hook {
 
@@ -15,8 +19,12 @@ public class Hook {
 
 
     @After
-    public static void afterClass() throws Exception {
+    public static void tearDown(Scenario scenario) throws Exception {
+        if (scenario.isFailed()){
+            TakesScreenshot ts = (TakesScreenshot) Driver.getDriver();
 
+        }
+        scenario.isFailed();
         System.out.println("Hook classindaki @Before methodu her test senaryosunda sonra çalişir");
 
     }
