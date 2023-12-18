@@ -30,6 +30,11 @@ public class ExcelReader {
         return cell.toString();
     }
 
+    //bir excel sayfasindaki son satirin indexini dondurur
+    public int rowCount(){
+        return sheet.getLastRowNum();
+    }
+
 
 
 
