@@ -10,6 +10,7 @@ import org.openqa.selenium.Keys;
 import pages.BlueRentalPage;
 import utilities.ConfigReader;
 import utilities.Driver;
+import utilities.ExcelReader;
 import utilities.ReusableMethods;
 
 import java.io.FileNotFoundException;
@@ -110,5 +111,12 @@ public class BlueRentalStepDefinition {
 
 
         }
+    }
+
+    @And("exceldeki {string} sayfasindaki kullanici bilgileri ile login olur")
+    public void exceldekiSayfasindakiKullaniciBilgileriIleLoginOlur(String sayfaIsmi) {
+        ExcelReader excelReader = new ExcelReader("",sayfaIsmi);
+
+
     }
 }
