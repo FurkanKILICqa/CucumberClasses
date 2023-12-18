@@ -12,6 +12,13 @@ import utilities.ReusableMethods;
 
 public class Hook {
 
+    /*
+    hooks classi ile scenariolardan once veya sonra calismasini istedigimiz kodlari
+    io.cucumber.java.Before VE io.cucumber.java.After methodlari sayesinde yapariz
+    Eger sadece istedigimiz scenariodan once calismasini istedigimiz bir kod olursa @Before notasyonu parantezi icine tagi belirtiriz
+    Eger sadece istedigimiz scenariodan sonra calismasini istedigimiz bir kod olursa @After notasyonu parantezi icine tagi belirtiriz
+    Dolayisiyla bu sekilde sadece tagi belirttigimiz scenariodan once veya sonra calistirilir
+     */
 
     @Before
     public static void setUp() throws Exception {
