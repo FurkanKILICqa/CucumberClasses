@@ -22,6 +22,11 @@ public class Hook {
     public static void setUp2() throws Exception {
         System.out.println("Hook classindaki @Before methodu her test senaryosunda önce çalişir");
     }
+    @After("honda")
+    public static void tearDown2() throws Exception {
+        System.out.println("Hook classindaki @Before methodu her test senaryosunda önce çalişir");
+    }
+
 
     @After
     public static void tearDown(Scenario scenario) throws Exception {
