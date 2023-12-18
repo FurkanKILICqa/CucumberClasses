@@ -5,6 +5,7 @@ import io.cucumber.java.Before;
 import io.cucumber.java.Scenario;
 import org.junit.AfterClass;
 import org.junit.BeforeClass;
+import org.openqa.selenium.OutputType;
 import org.openqa.selenium.TakesScreenshot;
 import utilities.Driver;
 import utilities.ReusableMethods;
@@ -22,6 +23,7 @@ public class Hook {
     public static void tearDown(Scenario scenario) throws Exception {
         if (scenario.isFailed()){
             TakesScreenshot ts = (TakesScreenshot) Driver.getDriver();
+            scenario.attach(ts.getScreenshotAs(OutputType.BYTES),"image/png","scnario"+scenario.getName());
 
         }
         scenario.isFailed();
