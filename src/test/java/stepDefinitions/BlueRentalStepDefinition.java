@@ -14,6 +14,7 @@ import utilities.ExcelReader;
 import utilities.ReusableMethods;
 
 import java.io.FileNotFoundException;
+import java.security.Key;
 import java.util.List;
 
 public class BlueRentalStepDefinition {
@@ -118,9 +119,19 @@ public class BlueRentalStepDefinition {
         ExcelReader excelReader = new ExcelReader("",sayfaIsmi);
         String dosyayolu="src\\test\\resources\\adminTestData.xlsx";
 
-        for (int i = 0; i < excelReader.rowCount() ; i++) {
+        for (int i = 0; i <= excelReader.rowCount() ; i++) {
           String email =  excelReader.getCellData(0, 0);
           String password =  excelReader.getCellData(0, 1);
+
+
+          blueRentalPage.email.sendKeys(email);
+          blueRentalPage.email.sendKeys(password,Keys.ENTER);
+
+          ReusableMethods.bekle(2);
+
+          Driver.getDriver().navigate().back();
+
+          ReusableMethods.bekle(2);
         }
 
 
