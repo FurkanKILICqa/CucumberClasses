@@ -117,8 +117,12 @@ public class BlueRentalStepDefinition {
     public void exceldekiSayfasindakiKullaniciBilgileriIleLoginOlur(String sayfaIsmi) {
         ExcelReader excelReader = new ExcelReader("",sayfaIsmi);
         String dosyayolu="src\\test\\resources\\adminTestData.xlsx";
-        System.out.println(excelReader.getCellData(0, 0));
-        System.out.println(excelReader.getCellData(0, 1));
+
+        for (int i = 0; i < excelReader.rowCount() ; i++) {
+          String email =  excelReader.getCellData(0, 0);
+          String password =  excelReader.getCellData(0, 1);
+        }
+
 
     }
 }
