@@ -1,5 +1,6 @@
 package utilities;
 
+import org.apache.poi.ss.usermodel.Cell;
 import org.apache.poi.ss.usermodel.Sheet;
 import org.apache.poi.ss.usermodel.Workbook;
 import org.apache.poi.ss.usermodel.WorkbookFactory;
@@ -22,4 +23,14 @@ public class ExcelReader {
             throw new RuntimeException(e);
         }
     }
+
+    //Satir ve sutun indexlerini girerek ilgili cell datasini string olarak return eder
+    public String getCellData(int satir, int sutun){
+        Cell cell = sheet.getRow(satir).getCell(sutun);
+        return cell.toString();
+    }
+
+
+
+
 }
