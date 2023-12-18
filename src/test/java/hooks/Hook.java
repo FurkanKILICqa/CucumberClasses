@@ -18,7 +18,7 @@ public class Hook {
         System.out.println("Hook classindaki @Before methodu her test senaryosunda önce çalişir");
     }
 
-    @Before
+    @Before("honda")//sadece honda dan önce çalışacak
     public static void setUp2() throws Exception {
         System.out.println("Hook classindaki @Before methodu her test senaryosunda önce çalişir");
     }
