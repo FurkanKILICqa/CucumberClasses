@@ -14,10 +14,14 @@ public class Hook {
 
 
     @Before
-    public static void beforeClass() throws Exception {
+    public static void setUp() throws Exception {
         System.out.println("Hook classindaki @Before methodu her test senaryosunda önce çalişir");
     }
 
+    @Before
+    public static void setUp2() throws Exception {
+        System.out.println("Hook classindaki @Before methodu her test senaryosunda önce çalişir");
+    }
 
     @After
     public static void tearDown(Scenario scenario) throws Exception {
