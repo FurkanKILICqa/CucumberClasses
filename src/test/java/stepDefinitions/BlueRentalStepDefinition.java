@@ -116,7 +116,8 @@ public class BlueRentalStepDefinition {
     @And("exceldeki {string} sayfasindaki kullanici bilgileri ile login olur")
     public void exceldekiSayfasindakiKullaniciBilgileriIleLoginOlur(String sayfaIsmi) {
         ExcelReader excelReader = new ExcelReader("",sayfaIsmi);
-
+        String dosyayolu="src\\test\\resources\\adminTestData.xlsx";
+        excelReader.getCellData(0,0);
 
     }
 }
