@@ -17,6 +17,13 @@ import org.junit.runner.RunWith;
         glue = {"stepDefinitions","hooks"},
         dryRun = false,
         monochrome = true
+        /*
+    rerun plugini ile fail olan scenariolari burada belirtmis oldugumuz failed_scenario.txt dosyasi icinde tutabiliriz
+
+    Bu classda sadece fail olan test scenariolarini calistiracağız
+    Sadece txt dosyasindaki fail olan scenariolar calistirilacağı icin tags parametresine gerek yoktur
+
+ */
 
 )
 public class FailedRunner{
@@ -24,3 +31,4 @@ public class FailedRunner{
 
 
 }
+
