@@ -32,7 +32,7 @@ public class ExcelReader {
 
     //bir excel sayfasindaki son satirin indexini dondurur
     public int rowCount(){
-        return sheet.getLastRowNum();
+        return sheet.getLastRowNum();//Son satırı verir
     }
 
 

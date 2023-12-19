@@ -11,8 +11,9 @@ import org.junit.runner.RunWith;
                 "pretty",//==> console da scenariolar ile ilgili ayrintili bilgi verir
                 "html:target/default-cucumber-reports.html",
                 "json:target/json-reports/cucumber.json",
-                "junit:target/xml-report/cucumber.xml"},
-        features = "src/test/resources/features",
+                "junit:target/xml-report/cucumber.xml",
+                "rerun:TestOutput/failed_scenario.txt"},
+        features ="src/test/resources/features",
         glue = {"stepDefinitions","hooks"},
         tags = "@US011",
         dryRun = false,
